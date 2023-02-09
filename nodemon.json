@@ -1,0 +1,18 @@
+{
+    "verbose": true,
+    "watch": [
+        "./dist"
+    ],
+    "ext": "ts,json,js",
+    "ignore": [
+        ".git",
+        ".gitignore",
+        "access.log",
+        "debug.log",
+        "./public/**/*.spec.ts"
+    ],
+    "exec": "node ./dist/app.js",
+    "env": {
+        "NODE_ENV": "development"
+    }
+}

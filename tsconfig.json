@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "ESNext",
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "allowJs": false,
+    "alwaysStrict": false,
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "lib": [
+      "dom","ESNext",
+    ],
+    "paths": {
+      "~controllers/*": ["./controllers/*"],
+      "~models/*": ["./models/*"],
+      "~middlewares/*": ["./middlewares/*"],
+      "~utils/*": ["./utils/*"],
+      "~routes/*": ["./routes/*"],
+      "~helpers/*": ["./helpers/*"],
+      "~contracts/*": ["./contracts/*"],
+      "~configs/*": ["./configs/*"],
+      "~data/*": ["./data/*"],
+    }
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": [
+    "environment.d.ts",
+    "./src/**/*.ts"
+  ]
+}
